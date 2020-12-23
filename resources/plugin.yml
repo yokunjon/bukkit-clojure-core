@@ -1,4 +1,4 @@
 name: BukkitClojureCore
 version: 0.1
-main: com.mc_rp.bukkit_clojure_core.BukkitClojureCore
+main: com.mc_rp.bukkit_clojure.BukkitClojureCore
 api-version: 1.16

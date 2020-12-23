@@ -1,1 +1,2 @@
-(ns bukkit-clojure-core.core)
+(ns bukkit-clojure-core.core
+  (:gen-class))

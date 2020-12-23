@@ -1,6 +1,6 @@
-package com.mc_rp.bukkit_clojure_core;
+package com.mc_rp.bukkit_clojure;
 
-import com.mc_rp.bukkit_clojure_core.manager.Manager;
+import com.mc_rp.bukkit_clojure.manager.Manager;
 import java.nio.file.Path;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

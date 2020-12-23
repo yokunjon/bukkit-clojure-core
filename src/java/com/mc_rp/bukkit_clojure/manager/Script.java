@@ -1,4 +1,4 @@
-package com.mc_rp.bukkit_clojure_core.manager;
+package com.mc_rp.bukkit_clojure.manager;
 
 import clojure.lang.Compiler;
 import clojure.lang.Var;

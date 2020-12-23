@@ -1,10 +1,10 @@
-package com.mc_rp.bukkit_clojure_core.manager;
+package com.mc_rp.bukkit_clojure.manager;
 
 import clojure.lang.Compiler;
 import clojure.lang.DynamicClassLoader;
 import clojure.lang.RT;
 import clojure.lang.Var;
-import com.mc_rp.bukkit_clojure_core.BukkitClojureCore;
+import com.mc_rp.bukkit_clojure.BukkitClojureCore;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -31,7 +31,7 @@ public class Manager {
     classLoader = newClassLoader(bukkit);
     try {
       RT.load("clojure/core");
-      RT.load("bukkit_clojure_core");
+      RT.load("bukkit_clojure_core.core");
     } catch (IOException | ClassNotFoundException e) {
       e.printStackTrace();
     }

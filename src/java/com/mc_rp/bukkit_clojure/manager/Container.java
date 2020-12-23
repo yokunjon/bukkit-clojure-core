@@ -1,4 +1,4 @@
-package com.mc_rp.bukkit_clojure_core.manager;
+package com.mc_rp.bukkit_clojure.manager;
 
 import java.io.IOException;
 import java.nio.file.Files;
