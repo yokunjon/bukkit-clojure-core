@@ -12,11 +12,16 @@ import java.util.HashMap;
 
 public class Manager {
 
-  private final Path scriptsPath = BukkitClojureCore.getInstance().getDataPath().resolve("scripts");
-  private final Container container = new Container(this, scriptsPath);
   private ClassLoader classLoader;
+  private final Path scriptsPath;
+  private final Container container;
   private final HashMap<Path, Loadable> containersRef = new HashMap<>();
   private final HashMap<Path, Loadable> scriptsRef = new HashMap<>();
+
+  public Manager(BukkitClojureCore plugin) {
+    scriptsPath = plugin.getDataPath().resolve("scripts");
+    container = new Container(this, scriptsPath);
+  }
 
   public void initialize() {
     ClassLoader current = Thread.currentThread().getContextClassLoader();

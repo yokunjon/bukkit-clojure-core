@@ -6,8 +6,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BukkitClojureCore extends JavaPlugin {
-  private final Manager manager = new Manager();
-  private final Path dataFolder = getInstance().getDataFolder().getAbsoluteFile().toPath();
+  private final Path dataFolder = getDataFolder().getAbsoluteFile().toPath();
+  private final Manager manager = new Manager(this);
   @Override
   public void onEnable() {
     manager.initialize();
